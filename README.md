@@ -9,5 +9,11 @@ will be excluded from this repo to avoid repetition.
 
 ## Topics
 
-1. SQL
-   * ds
+1. [Relational databases and data base design](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md)
+   * [Introduction](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Introduction)
+   * [Database design](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Database-design)
+   * [Storing data](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Storing-data)
+   * [Normalization](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Normalization)
+   * [Views](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Views)
+   * [Database management](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Database-management)
+2. Data Warehouse
