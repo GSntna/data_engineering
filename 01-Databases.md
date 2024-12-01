@@ -1,11 +1,21 @@
 # Databases
 
-## Summary
+## Index
 
-| Query | Description |
-| --- | --- |
-| ```FROM information_schema.tables``` | Retrieve tables info in the database |
-| ```FROM information_schema.columns``` | Retrieve columns info in the database |
+* [Introduction](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Introduction)
+  * [Tables](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Tables)
+  * [Integrity constraints](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Integrity-constraints)
+* [Database design](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Database-design)
+  * [OLTP vs OLAP](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#OLTP-vs-OLAP)
+* [Storing data](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Storing-data)
+* [Normalization](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Normalization)
+  * [Star schema vs Snowflake schema](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Star-schema-vs-Snowflake-schema)
+  * [Normalization](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Normalization)
+* [Views](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Views)
+  * [Materialized views](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Materialized-views)
+* [Database management](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Database-management)
+  * [Roles and access control](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Roles-and-access-control)
+  * [Table partitioning](https://github.com/GSntna/data_engineering/blob/main/01-Databases.md#Table-partitioning)
 
 ## Introduction
 
@@ -66,6 +76,14 @@ INSERT INTO professors
 SELECT DISTINCT firstname, lastname, university_shortname 
 FROM university_professors;
 ```
+
+#### Consulting database schema
+
+| Query | Description |
+| --- | --- |
+| ```FROM information_schema.tables``` | Retrieve tables info in the database |
+| ```FROM information_schema.columns``` | Retrieve columns info in the database |
+
 
 ### Integrity constraints
 
